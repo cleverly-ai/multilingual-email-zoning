@@ -34,7 +34,7 @@ Multilingual email zoning corpus, containing:
 │   ├── pt_annotator1.json      -- Portuguese annotations done by our first annotator (A1)
 │   └── pt_annotator2.json      -- Portuguese annotations done by our second annotator (A2)
 └── paper/
-    └── Paper.pdf               -- PDF file with the original paper that presents the Cleverly Zoning Corpus (please cite it if you use this corpus) 
+    └── Paper.pdf               -- PDF with the original paper presenting the Cleverly Zoning Corpus 
 ```
 
 ## Reference  <a id="paper"></a>
