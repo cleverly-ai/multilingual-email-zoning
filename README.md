@@ -24,13 +24,16 @@ New annotated multilingual email zoning corpus, containing:
 ## Files and folders  <a id="files"></a>
 
 ```
-├── README.md                     --
-├── code/                         --
-├── corpus/                       --
-│   ├── es_annotator1.txt   -- 
-│   ├── fr_annotator.txt   -- 
-│   └── pt_zone_annotations.txt   --
-└── paper/                        --
+├── README.md                   -- This file with instructions
+├── corpus/                     -- Folder with Cleverly Zoning Corpus
+│   ├── es_annotator1.json      -- Spanish annotations done by our first annotator (A1)
+│   ├── es_annotator2.json      -- Spanish annotations done by our second annotator (A2)
+│   ├── fr_annotator1.json      -- French annotations done by our first annotator (A1)
+│   ├── fr_annotator2.json      -- French annotations done by our second annotator (A2)
+│   ├── pt_annotator1.json      -- Portuguese annotations done by our first annotator (A1)
+│   └── pt_annotator2.json      -- Portuguese annotations done by our second annotator (A2)
+└── paper/
+    └── Paper.pdf               -- PDF file with the original paper where the paper (please cite it if you use this corpus) 
 ```
 
 ## Reference  <a id="paper"></a>
@@ -100,7 +103,7 @@ The distribution of zones is quite similar between the three languages, with the
 | lines per email | 58.9 | 49.1 | 32.4 |
 | zones per email | 8.6 | 6.5 | 5.9 |
 
-The annotation was carried out on [Tagtog] by two annotators - one native Portuguese speaker and the other native Spanish speaker, both with academical background in French and fluent in the third language. Each email was annotated by both annotators. The Inter-annotator agreement is the following:
+The annotation was carried out using [Tagtog] by two annotators. The first annotator was a native Portuguese speaker and the second annotator a native Spanish speaker, both with academical background in French and fluent in the third language. Each email was annotated by both annotators, with the following inter-annotator agreement:
 
 |  | **pt** | **es** | **fr** |
 | ------ | ------ | ------ | ------ |
@@ -112,7 +115,7 @@ The annotation was carried out on [Tagtog] by two annotators - one native Portug
 
 
 ### Annotation format  <a id="annotations"></a>
-The corpus comes is divided in 6 files (3 languages and 2 annotators), each containing a list of dictionaries. Each email annotation (one dictionary) consists of two key value pairs:
+The corpus consists of 6 files (one for each of the 3 languages and 2 annotators). Each annotation file contains a list of document annotations, that are stored in dictionarie with the following strucure:
 
 ```sh
 {"_id": "<urn:uuid:aa5e973e-65fc-4d32-a0d1-7848eaf405e8>", 
@@ -124,8 +127,8 @@ The corpus comes is divided in 6 files (3 languages and 2 annotators), each cont
          ["quotation_marker", 759, 829], 
          ["quotation", 829, 1150]]}
 ```
-The first key value pair "_id" is the email id from the original [Gmane corpus].
-The second key value pair "zones" contains the annotated zone spans as a list of lists. Each sublist containing the name of the zone, starting character and ending character. 
+The first key ("_id") has the value the email id from the original [Gmane corpus].
+The second key ("zones") contains the annotated zone spans of that email as a list of lists, where each sublist contais the name of the zone ("greading", "body", "signature", etc), followed by the starting character and ending character of that zone in the email. 
 
 
 ## How to use Cleverly Zoning Corpus <a id="howto"></a>
