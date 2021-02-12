@@ -111,10 +111,17 @@ The annotation was carried out on [Tagtog] by two annotators - one native Portug
 
 
 ### Annotation format  <a id="annotations"></a>
-The corpus comes is divided in three files (one per language), each containing a list of dictionaries. Each email annotation (one dictionary) consists of two key value pairs:
+The corpus comes is divided in 6 files (3 languages and 2 annotators), each containing a list of dictionaries. Each email annotation (one dictionary) consists of two key value pairs:
 
 ```sh
-{"_id": "<urn:uuid:aa5e973e-65fc-4d32-a0d1-7848eaf405e8>", "zones": [["salutation", 0, 11], ["paragraph", 11, 601], ["closing", 601, 610], ["personal_signature", 610, 677], ["mua_signature", 677, 759], ["quotation_marker", 759, 829], ["quotation", 829, 1150]]}
+{"_id": "<urn:uuid:aa5e973e-65fc-4d32-a0d1-7848eaf405e8>", 
+"zones": [["salutation", 0, 11], 
+         ["paragraph", 11, 601], 
+         ["closing", 601, 610], 
+         ["personal_signature", 610, 677], 
+         ["mua_signature", 677, 759], 
+         ["quotation_marker", 759, 829], 
+         ["quotation", 829, 1150]]}
 ```
 The first key value pair "_id" is the email id from the original [Gmane corpus].
 The second key value pair "zones" contains the annotated zone spans as a list of lists. Each sublist containing the name of the zone, starting character and ending character. 
