@@ -104,6 +104,7 @@ The annotation was carried out on [Tagtog] by two annotators - one native Portug
 
 |  | **pt** | **es** | **fr** |
 | ------ | ------ | ------ | ------ |
+|accuracy| 0.93 | 0.92 | 0.96 |
 |F<sub>1</sub> A<sub>1</sub>A<sub>2</sub>| 0.93 | 0.92 | 0.96 |
 |F<sub>1</sub> A<sub>2</sub>A<sub>1</sub>| 0.94 | 0.92 | 0.96 |
 |*k* (Cohen's Kappa) | 0.90 | 0.87 | 0.94 |
