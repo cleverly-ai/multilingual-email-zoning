@@ -155,7 +155,7 @@ Open one of the annotation files (french)
 ```python
 import io
 import json
-with io.open('fr_zone_annotations.json', encoding="utf-8") as json_file:
+with io.open('fr_annotator1.json', encoding="utf-8") as json_file:
     cleverly_fr = json.load(json_file)
 ```    
 
