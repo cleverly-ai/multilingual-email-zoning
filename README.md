@@ -1,6 +1,6 @@
-# Cleverly Multilingual Email Zoning Corpus
+# Cleverly Zoning Corpus
 
-New annotated multilingual email zoning corpus, containing:
+Multilingual email zoning corpus, containing:
 - Gmane email corpus annotated by email zones
 - 215 French emails
 - 210 Potuguese emails
