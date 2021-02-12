@@ -24,6 +24,7 @@ New annotated multilingual email zoning corpus, containing:
 ## Files and folders  <a id="files"></a>
 
 ```
+├── LICENSE                     -- File with licence description (Apache License 2.0.)
 ├── README.md                   -- This file with instructions
 ├── corpus/                     -- Folder with Cleverly Zoning Corpus
 │   ├── es_annotator1.json      -- Spanish annotations done by our first annotator (A1)
