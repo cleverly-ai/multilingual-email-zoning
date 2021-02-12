@@ -9,13 +9,16 @@ New annotated multilingual email zoning corpus, containing:
 
 ## Table of contents
 
-1. [Files and folders](#files)
+1. [Files and folders](#files) 
 2. [Reference](#paper)
 2. [Licence](#licence)
 3. [Corpus description](#corpus)
-4. [How to use](#howto)
-
-
+    1. [Email zones](#zones)
+    2. [Statistics](#stats)
+    3. [Annotation format](#annotations)   
+4. [How to use Cleverly Zoning Corpus](#howto)
+    1. [Load the email textual content](#load_corpus) 
+    2. [Load Cleverly corpus and match Ids (Python)](#macth_ids) 
 
 
 ## Files and folders  <a id="files"></a>
@@ -43,34 +46,27 @@ with the bibtex:
 @inproceedings{BJardim2021,
  author = {Bruno Jardim and Ricardo Rei and Mariana S. C. Almeida},
  title = {Multilingual Email Zoning},
- booktitle = {},
- series = {},
+ booktitle = {EACL 2021 student Research Wrokshop},
+ publisher = {Association for Computational Linguistics},
  year = {2021},
  month = {April},
- isbn = {},
- location = {},
- pages = {},
- numpages = {},
- url = {},
- doi = {},
- publisher = {},
- address = {},
- keywords = {},
+ location = {online},
+ url = {https://arxiv.org/abs/2102.00461},
 } 
 ```
 
 
-### Abstract
+### Abstract <a id="abstract"></a>
 >The segmentation of emails into functional zones (also dubbed **email zoning**) is a relevant preprocessing step for most NLP tasks that deal with emails. However, despite the multilingual character of emails and their applications, previous literature regarding email zoning corpora and systems was developed essentially for English. In this paper, we analyse the existing email zoning corpora and propose Cleverly zoning corpus,
 a new multilingual benchmark composed of 625 emails in Portuguese, Spanish and French. Moreover, we introduce Okapi, the first multilingual email segmentation model based on a language agnostic sentence encoder. Besides generalizing well for unseen languages, our model is competitive with current English benchmarks, and reached new state-of-the-art performances for domain adaptation tasks in English.
 
 ## Licence  <a id="licence"></a>
 
-Apache licence. 
-More details are in the LICENCE file in the root of this project.
+Apache License 2.0.
+See more details are in the LICENCE file in the root of this project.
 
 
-## Corpus Description  <a id="corpus"></a>
+## Corpus description  <a id="corpus"></a>
 To build a multilingual email corpus, we searched the [Gmane corpus] (Bevendor et al., 2020) for Portuguese, Spanish and French emails. Then, following the classification schema proposed in Bevendor et al. (2020), we produced a total of 625 annotated emails that compose the Cleverly Email Zoning Corpus.
 
 ### Email zones <a id="zones"></a>
@@ -124,7 +120,7 @@ The first key value pair "_id" is the email id from the original [Gmane corpus].
 The second key value pair "zones" contains the annotated zone spans as a list of lists. Each sublist containing the name of the zone, starting character and ending character. 
 
 
-## How to use Cleverly Corpus <a id="howto"></a>
+## How to use Cleverly Zoning Corpus <a id="howto"></a>
 
 ### Load the email textual content  <a id="load_corpus"></a>
 To retrieve the email content:
@@ -139,9 +135,9 @@ To retrieve the email content:
 
 5. Match ids with our zone annotations
 
-### Load Cleverly Corpus and match Ids (Python)  <a id="macth_ids"></a>
+### Load Cleverly corpus and match Ids (Python)  <a id="macth_ids"></a>
 
-#### Open Cleverly Corpus files
+#### Open Cleverly corpus files
 Open one of the annotation files (french)
 
 ```python
