@@ -1,10 +1,10 @@
 # Cleverly Zoning Corpus
 
 Multilingual email zoning corpus, containing:
-- Gmane email corpus annotated by email zones
-- 215 French emails
-- 210 Potuguese emails
-- 200 Spanish emails
+- 625 non-English emails from [Gmane corpus] annotated with email zones:
+    - 215 French emails
+    - 210 Potuguese emails
+    - 200 Spanish emails
 
 
 ## Table of contents
