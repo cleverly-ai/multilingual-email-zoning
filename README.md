@@ -2,6 +2,7 @@
 
 Multilingual email zoning corpus, containing:
 - 625 non-English emails from [Gmane corpus] annotated with email zones, including:
+
     - 215 French emails
     - 210 Potuguese emails
     - 200 Spanish emails
